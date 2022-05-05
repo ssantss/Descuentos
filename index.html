@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+<!--     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 800px)"> -->
+    <title>calculator discounts</title>
+</head>
+<body>
+    <header class="header">
+        <figure class="logo"><img src="./resources/discount.png" alt="discounts_image"></figure>
+        <div class="titulo">CALCULATOR DISCOUNTS</div>
+        
+    </header>
+
+    <main class="container">      
+
+
+        <div class="card">
+            <div class="card-header">
+              <img src="./resources/descuento.png" alt="Descuentos" />
+
+            </div>
+            <div class="card-body">
+              <span class="tag tag-teal">CALCULA TU DESCUENTO</span>
+            
+
+                <label id="p" for="Inputprecio" >¿Cual es el precio de tu prodcuto?</label>
+                <input id="Inputprecio" class="input" type="number" placeholder="Ingrese precio del producto"  ">
+                <label id="p" for="Inputdescuento" >¿Cual es el porcentaje de descuento?</label>
+                <input id="Inputdescuento" class="input" type="number" placeholder="Ingrese porcentaje del producto" onkeydown="enter_calculo(this) ">
+                <label id="p" for="Inputcupon" >¿Tienes un cupon?</label>
+                <input id="Inputcupon" class="input" type="text" placeholder="Ingrese tu cupon" onkeydown="enter_calculo(this) ">
+
+                <button class="button" onclick="calculo() ">Calcular</button>
+
+
+                <div class="resultados">
+                    <div id="resultado"></div>             
+                </div>
+
+            </div>  
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+      <p>Desarrollado con 💚 por <a href="https://twitter.com/santiiiag_o" target="_blank">Santaigo</a> para Platzi.</p>
+  </footer>
+
+    <script src="./js/functions.js"></script>
+
+</body>
+</html>
