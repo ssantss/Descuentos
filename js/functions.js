@@ -7,7 +7,6 @@ function calculo_descuento (precio, descuento, cupon_value){
 
 
 }
-
 function calculo(){
     const input = document.getElementById("Inputprecio");
     const precio = parseInt(input.value);
