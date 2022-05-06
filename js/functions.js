@@ -30,9 +30,6 @@ function calculo(){
         }
 
     document.getElementById('resultado').innerHTML = resultado;
-
-
-
 }
 
 function validar_cupon(cupon){
